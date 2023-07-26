@@ -59,6 +59,13 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.44.0.tgz#961a5903c74139390478bdc808bcde3fc45ab7af"
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
+"@fisch0920/python-bridge@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@fisch0920/python-bridge/-/python-bridge-1.1.0.tgz#a31d1adbddd9d82b98b08c3e0d27ed19d0f2734a"
+  integrity sha512-ky37823e3UQkT8+1f78hsc27tjUI5LePylEJy3Xc/jSgms9O74KlPRzULLqUPi+1wiwMwrOyV/dgFD8d5bXabA==
+  dependencies:
+    bluebird "^3.5.0"
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"
@@ -664,6 +671,11 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
+
+bluebird@^3.5.0:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
 bplist-parser@^0.2.0:
   version "0.2.0"
@@ -2531,6 +2543,13 @@ signal-exit@^3.0.3, signal-exit@^3.0.7:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
+
+sklearn@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/sklearn/-/sklearn-0.3.0.tgz#c0e3969df658d66922728dcf4a9ecc38f2585196"
+  integrity sha512-o/IszYSVIKBmB3QK4XlcFa09styX9jY+C1xeSNGwHRxVvvJdfPPYsA+eTHUhlAAYu7VpErlcYPiyouowJkf0sA==
+  dependencies:
+    "@fisch0920/python-bridge" "^1.1.0"
 
 slash@^3.0.0:
   version "3.0.0"
