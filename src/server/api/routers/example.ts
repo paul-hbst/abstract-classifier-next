@@ -19,6 +19,28 @@ export const exampleRouter = createTRPCRouter({
   }),
 
   getSecretMessage: protectedProcedure.query(() => {
-    return "you can now see this secret message!";
+    return "This is secret!";
   }),
+  classify: protectedProcedure
+    .input(
+      z.object({
+        name: z.string(),
+        age: z.number(),
+        abstracts: z.array(
+          z.object({
+            text: z.string(),
+            id: z.number(),
+          })
+        ),
+      })
+    )
+    .query(({ input }) => {
+      const absLength = input.abstracts.map((abstract) => {
+        return abstract.text.length;
+      });
+      return {
+        message: `${input.name} is ${input.age} years old`,
+        absLength,
+      };
+    }),
 });
